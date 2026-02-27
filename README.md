@@ -78,3 +78,32 @@ The `queries.sh` script extracts insights such as:
 
 ```bash
 psql -U postgres < worldcup.sql
+```
+
+Or run ETL script:
+```bash
+chmod +x insert_data.sh
+./insert_data.sh
+```
+Run analytics queries
+```bash
+chmod +x queries.sh
+./queries.sh
+```
+
+## 📁 Repository Files
+
+- worldcup.sql — database dump (schema + data)
+- insert_data.sh — ETL script
+- queries.sh — analytics queries
+
+## 🎓 Certification
+
+This project was completed as part of the *freeCodeCamp Relational Database Certification.*
+
+## 📈 Future Improvements
+
+- Add indexes for performance
+- Create SQL views for analytics
+- Build visual dashboards
+- Extend dataset to additional tournaments
